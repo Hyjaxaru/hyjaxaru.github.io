@@ -1,0 +1,12 @@
+{
+    "plugins": [
+        {
+            "type": "add",
+            "pluginName": "fleet.xml"
+        },
+        {
+            "type": "add",
+            "pluginName": "fleet.css"
+        }
+    ]
+}

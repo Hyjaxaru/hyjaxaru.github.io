@@ -1,0 +1,24 @@
+:root {
+    --background: #121212;
+    --on-background: #1E1E1E;
+    --accent: #BB86FC;
+    --text-primary: #E0E0E0;
+    --text-secondary: #8C8C8C;
+    --error: #CF6679;
+    --success: #03DAC6;
+}
+
+/* Color Classes */
+.subtext {color: var(--text-secondary)}
+.accent {color: var(--accent)}
+.error {color: var(--error)}
+.success {color: var(--success)}
+
+body {
+    background-color: var(--background);
+}
+
+header {
+    font-family: Poppins, sans-serif;
+    color: var(--text-primary);
+}
