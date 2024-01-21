@@ -1,24 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 :root {
     --background: #121212;
     --on-background: #1E1E1E;
-    --accent: #BB86FC;
+    --primary: #BB86FC;
+    --secondary: #86A1FC;
+    --accent-dark: #7A5B94;
+    --accent-light: #D6C2FF;
     --text-primary: #E0E0E0;
     --text-secondary: #8C8C8C;
     --error: #CF6679;
     --success: #03DAC6;
 }
 
-/* Color Classes */
-.subtext {color: var(--text-secondary)}
-.accent {color: var(--accent)}
-.error {color: var(--error)}
-.success {color: var(--success)}
-
-body {
-    background-color: var(--background);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-header {
-    font-family: Poppins, sans-serif;
+body {
+    height: 100vh;
+    background: var(--background);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 50px;
+}
+
+.navbar h2 {color: var(--primary);font-weight: 600;}
+.navbar ul {display: flex;}
+.navbar ul li {list-style: none;}
+
+.navbar ul li a {
+    text-decoration: none;
     color: var(--text-primary);
+    font-size: 16px;
+    margin-right: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: var(--primary)
+}
+
+.navbar ul ul:last-child a {
+    margin: 0;
+}
+
+.hire-btn {
+    background: var(--primary);
+    padding: 6px 30px;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.hire-btn:hover {
+    background-color: var(--accent-dark);
+}
+
+.main {
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h4 {
+    font-size: 32px;
+    color: var(--text-primary);
+}
+
+.main h4 span {
+    font-size: 32px;
+    color: var(--primary);
+}
+
+.main p.title {
+    font-size: 44px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-top: 20px;
+}
+
+.main p.subtitle {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-top: 20px;
+}
+
+.main img {
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    border-radius: 1rem;
 }
